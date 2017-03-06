@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>柯涛个人简历</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="css/mui.css">
+		
+		<style>
+			
+			.title{
+				margin: 20px 15px 10px;
+				color: #6d6d72;
+				font-size: 15px;
+			}
+			
+			.oa-contact-cell.mui-table .mui-table-cell {
+				padding: 11px 0;
+				vertical-align: middle;
+			}
+			
+			.oa-contact-cell {
+				position: relative;
+				margin: -11px 0;
+			}
+	
+			.oa-contact-avatar {
+				width: 75px;
+			}
+			.oa-contact-avatar img {
+				border-radius: 50%;
+			}
+			.oa-contact-content {
+				width: 100%;
+			}
+			.oa-contact-name {
+				margin-right: 20px;
+			}
+			.oa-contact-name, oa-contact-position {
+				float: left;
+			}
+			.mui-card{margin: 0;padding: 2%;}
+			
+			
+			
+			/*图片放大样式*/
+			.mui-preview-image.mui-fullscreen {
+				position: fixed;
+				z-index: 20;
+				background-color: #000;
+			}
+			.mui-preview-header,
+			.mui-preview-footer {
+				position: absolute;
+				width: 100%;
+				left: 0;
+				z-index: 10;
+			}
+			.mui-preview-header {
+				height: 44px;
+				top: 0;
+			}
+			.mui-preview-footer {
+				height: 50px;
+				bottom: 0px;
+			}
+			.mui-preview-header .mui-preview-indicator {
+				display: block;
+				line-height: 25px;
+				color: #fff;
+				text-align: center;
+				margin: 15px auto 4;
+				width: 70px;
+				background-color: rgba(0, 0, 0, 0.4);
+				border-radius: 12px;
+				font-size: 16px;
+			}
+			.mui-preview-image {
+				display: none;
+				-webkit-animation-duration: 0.5s;
+				animation-duration: 0.5s;
+				-webkit-animation-fill-mode: both;
+				animation-fill-mode: both;
+			}
+			.mui-preview-image.mui-preview-in {
+				-webkit-animation-name: fadeIn;
+				animation-name: fadeIn;
+			}
+			.mui-preview-image.mui-preview-out {
+				background: none;
+				-webkit-animation-name: fadeOut;
+				animation-name: fadeOut;
+			}
+			.mui-preview-image.mui-preview-out .mui-preview-header,
+			.mui-preview-image.mui-preview-out .mui-preview-footer {
+				display: none;
+			}
+			.mui-zoom-scroller {
+				position: absolute;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				align-items: center;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				justify-content: center;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				margin: 0;
+				-webkit-backface-visibility: hidden;
+			}
+			.mui-zoom {
+				-webkit-transform-style: preserve-3d;
+				transform-style: preserve-3d;
+			}
+			.mui-slider .mui-slider-group .mui-slider-item img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+			.mui-android-4-1 .mui-slider .mui-slider-group .mui-slider-item img {
+				width: 100%;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-slider-group .mui-slider-item {
+				display: inline-table;
+			}
+			.mui-android-4-1 .mui-slider.mui-preview-image .mui-zoom-scroller img {
+				display: table-cell;
+				vertical-align: middle;
+			}
+			.mui-preview-loading {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				display: none;
+			}
+			.mui-preview-loading.mui-active {
+				display: block;
+			}
+			.mui-preview-loading .mui-spinner-white {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -25px;
+				margin-top: -25px;
+				height: 50px;
+				width: 50px;
+			}
+			.mui-preview-image img.mui-transitioning {
+				-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+				transition: transform 0.5s ease, opacity 0.5s ease;
+			}
+			@-webkit-keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@keyframes fadeIn {
+				0% {
+					opacity: 0;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+			@-webkit-keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			@keyframes fadeOut {
+				0% {
+					opacity: 1;
+				}
+				100% {
+					opacity: 0;
+				}
+			}
+			p img {
+				max-width: 100%;
+				height: auto;
+			.mui-card,.mui-card-header,.mui-content-padded,.mui-card-content{
+				overflow: hidden;
+			}	
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">柯涛个人简历</h1>
+		</header>
+		
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" href="#tabbar">
+				<span class="mui-icon iconfont icon-jineng"></span>
+				<span class="mui-tab-label">技能</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-chat">
+				<span class="mui-icon iconfont icon-xiangmu"></span>
+				<span class="mui-tab-label">项目</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-contact">
+				<span class="mui-icon iconfont icon-xuexiao" style="font-size: 30px"></span>
+				<span class="mui-tab-label">经历</span>
+			</a>
+			<a class="mui-tab-item" href="#tabbar-with-map">
+				<span class="mui-icon iconfont icon-wode" style="font-size: 30px"></span>
+				<span class="mui-tab-label">我</span>
+			</a>
+		</nav>
+		<div class="mui-content">
+			<!--技能-->
+			<div id="tabbar" class="mui-control-content mui-active">
+				<ul class="mui-table-view mui-table-view-striped mui-table-view-condensed">
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/three.png"/>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">HTML、CSS、JS</h4>
+									<span class="oa-contact-position mui-h6">										
+									</span>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									熟练使用HCJ进行页面布局,以及动态效果的实现
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/2.jpg"/>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">JQuery</h4>									
+								</div>
+								<p class="oa-contact-email mui-h6">
+									熟练使用JQuery实现动画以及ajax与后台交互等
+								</p>
+							</div>
+						</div>
+					</div>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/3.jpg"/>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">bootsrap</h4>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									熟练使用bootstrap及easyui框架进行页面布局
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/1.jpg" />
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">AngularJs</h4>
+								</div>
+								<p class="oa-contact-email mui-h6">
+									熟练使用AngularJs
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/MUI.png"/>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">MUI</h4>
+									
+								</div>
+								<p class="oa-contact-email mui-h6">
+									了解MUI使用，用其做过一个简历									
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/hbuild.png"/>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">Hbuilder</h4>
+									
+								</div>
+								<p class="oa-contact-email mui-h6">
+									熟练使用hubilder以及sublime等工具
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-slider-cell">
+						<div class="oa-contact-cell mui-table">
+							<div class="oa-contact-avatar mui-table-cell">
+								<img class="skill_icon" src="images/react.jpg"/>
+							</div>
+							<div class="oa-contact-content mui-table-cell">
+								<div class="mui-clearfix">
+									<h4 class="oa-contact-name">react</h4>
+									
+								</div>
+								<p class="oa-contact-email mui-h6">
+									熟练使用react框架进行项目开发
+								</p>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			</div>
+			
+			<!--项目-->
+			<div id="tabbar-with-chat" class="mui-control-content">
+				<a style="padding:1%;padding-left: 5%;display: block;" href="javascript:void(0)">丽子美妆</a>
+				<hr />
+				<div class="mui-card" style="padding-top: 3%;">
+					<div class="mui-card-header mui-card-media" style="height:40vw;">
+						<div class="mui-content-padded">
+			
+				<p>
+					<img src="images/login.png" data-preview-src="" data-preview-group="1" />
+				</p>
+				
+			</div>
+				</div>					
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p style="color: #555;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+					</div>
+				</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">点击查看更多 </a>
+					</div>
+				</div>
+				
+				<hr />
+				
+				<div class="mui-card" style="padding-top: 3%;">
+					<div class="mui-card-header mui-card-media" style="height:40vw;">
+						<div class="mui-content-padded">
+			
+				<p>
+					<img src="images/pro2.png" data-preview-src="" data-preview-group="1" />
+				</p>
+				
+			</div>
+				</div>					
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p style="color: #555;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+					</div>
+				</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">点击查看更多 </a>
+					</div>
+				</div>
+				
+				<hr />
+				
+				<div class="mui-card" style="padding-top: 3%;">
+					<div class="mui-card-header mui-card-media" style="height:40vw;">
+						<div class="mui-content-padded">
+			
+				<p>
+					<img src="images/pro3.png" data-preview-src="" data-preview-group="1" />
+				</p>
+				
+			</div>
+				</div>					
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p style="color: #555;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+					</div>
+				</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">点击查看更多 </a>
+					</div>
+				</div>
+				
+				<hr />
+				<div class="mui-card" style="padding-top: 3%;">
+					<div class="mui-card-header mui-card-media" style="height:40vw;">
+						<div class="mui-content-padded">
+			
+				<p>
+					<img src="images/pro4.png" data-preview-src="" data-preview-group="1" />
+				</p>
+				
+			</div>
+				</div>					
+				<div class="mui-card-content">
+					<div class="mui-card-content-inner">
+						<p style="color: #555;">这里显示文章摘要，让读者对文章内容有个粗略的概念...</p>
+					</div>
+				</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link">点击查看更多 </a>
+					</div>
+				</div>
+				
+				<hr />
+				<p style="padding-left: 3%">丽子美妆项目历时五个月，我参与了整个项目的全过程，包含登录注册，首页等多个页面的书写以及与后台的及时交互</p>
+			</div>
+			
+			
+			<!--经历-->
+			<div id="tabbar-with-contact" class="mui-control-content">
+					<h3 style="text-align: center;font-weight: normal;padding: 2%;">高中<span style="font-size: 14px;color: #555555;">（蓬南中学）</span></h3>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" 					style="height:40vw;background:url(images/high.jpg) no-repeat center bottom">					
+					</div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>Posted on January 18, 2010</p>
+							<p style="color: #555555;">这是我高中生活的地方,以人为本、懿德至善是学校的校训，在这里我学到了诚信做人的道理，理解到了学习知识应该有的谨慎</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link" href="http://baike.baidu.com/link?url=AT76QMWi-JjWIWSLz3_n15ZpyKG-5-8T7uV9blsrBe2TAMzOFtfy_l6fIuzWL0Kgw7WuKS6hr3vK3M3L9aqbITbjH-uH5-WmM3YwceCdoze3vdbEx0849oFqPhxghy5y">点击查看</a>
+						<!--<a class="mui-card-link">Read more</a>-->
+					</div>
+				</div>
+				<h3 style="text-align: center;font-weight: normal;padding: 2%;">大学<span style="font-size: 14px;color: #555555;">（西南石油大学）</span></h3>
+				<div class="mui-card">
+					<div class="mui-card-header mui-card-media" 					style="height:40vw;background:url(images/uniersity.jpg) no-repeat center bottom">					
+					</div>
+					<div class="mui-card-content">
+						<div class="mui-card-content-inner">
+							<p>Posted on July 18, 2015</p>
+							<p style="color: #555555;">这是我大学生活的地方,明德笃志,博学创新是学校的校训，在这里我收获了知识，收获了朋友，收获了人生最宝贵的一笔财富</p>
+						</div>
+					</div>
+					<div class="mui-card-footer">
+						<a class="mui-card-link" href="http://baike.baidu.com/link?url=AgKT6g_MRmxbL3n6h7nxRt1NcNsr70mpsA1tu6zseY2XdXynEN4fMcwx7rmPz87yJ_5nRwR5XBRAHpp9cp7McofBiyEnhRePe5uvPiqayE5CnsU_8nAIsxfGJK9qsaDC_ks4sBFYmJh9zBZoqqQZ8a">点击查看</a>
+						
+					</div>
+				</div>
+			</div>
+		
+		
+			<!--我-->
+			<div id="tabbar-with-map" class="mui-control-content">
+				<div id="me_head" style="padding-left: 25%;background:url(images/bg2.jpg); padding-top:1%;">
+					<img style="border-radius: 50%;background: #DDDDDD;border: 1px solid #DDDDDD;" src="images/me.jpg"/>
+				</div>
+			<ul class="mui-table-view" style="color: #555">
+				 <li class="mui-table-view-cell">
+				 	<i class="iconfont icon-xingming" style="color: #007AFF"></i>
+				 	<span >姓名</span>
+				 	<span style="padding-left: 8%;">柯涛</span>
+				 </li>
+		         <li class="mui-table-view-cell">
+		         	<i class="iconfont icon-moban2nianling" style="color: #007AFF"></i>
+				 	<span >年龄</span>
+				 	<span style="padding-left: 8%;">23</span>
+		         </li>
+		         <li class="mui-table-view-cell">
+		         	<i class="iconfont icon-icon" style="color: #007AFF"></i>
+				 	<span >性别</span>
+				 	<span style="padding-left: 8%;">男</span>
+		         </li>
+			</ul>
+			
+			<ul class="mui-table-view" style="color: #555">
+				 <li class="mui-table-view-cell">
+				 	<i class="iconfont icon-dianhua" style="color: #007AFF"></i>
+				 	<span >电话</span>
+				 	<span style="padding-left: 8%;">15708479641</span>
+				 </li>
+		         <li class="mui-table-view-cell">
+		         	<i class="iconfont icon-QQ" style="color: #007AFF"></i>
+				 	<span >Q Q</span>
+				 	<span style="padding-left: 8%;">247775463</span>
+		         </li>
+		         <li class="mui-table-view-cell">
+		         	<i class="iconfont icon-weixin" style="color: #007AFF"></i>
+				 	<span >微信</span>
+				 	<span style="padding-left: 8%;">kt247775463</span>
+		         </li>
+		         <li class="mui-table-view-cell">
+		         	<i class="iconfont icon-unie61d" style="color: #007AFF"></i>
+				 	<span >微博</span>
+				 	<span style="padding-left: 8%;">ktxxxxxxxxxxx</span>
+		         </li>
+		         <ul class="mui-table-view" style="color: #555">
+		         	 <li class="mui-table-view-cell">
+		         	 	<i class="iconfont icon-aihao" style="color: #007AFF"></i>
+				 	<span >爱好</span>
+				 	<span style="padding-left: 8%;">乒乓球,篮球</span>
+		         	 </li>
+		         </ul>
+			</ul>
+			</div>
+		</div>
+	</body>
+	
+	<script src="js/mui.min.js"></script>
+	<script src="js/mui.zoom.js"></script>
+	<script src="js/mui.previewimage.js"></script>
+	<script>
+	
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+		mui.previewImage();
+	</script>
+</html>

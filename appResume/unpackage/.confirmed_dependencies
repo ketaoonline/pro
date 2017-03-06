@@ -1,0 +1,25 @@
+{
+  "index.html": {
+    "resources": [
+      "images/2.jpg",
+      "images/pro1.png",
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "images/1.jpg",
+      "images/hbuild.png",
+      "images/three.png",
+      "css/mui.css",
+      "images/react.jpg",
+      "images/3.jpg",
+      "images/MUI.png",
+      "images/login.png",
+      "images/uniersity.jpg",
+      "images/high.jpg",
+      "images/pro3.png",
+      "images/pro2.png",
+      "images/pro4.png",
+      "js/mui.zoom.js",
+      "js/mui.previewimage.js"
+    ]
+  }
+}
